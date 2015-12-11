@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Схема урока
+
+<ul>
+    <li><a href="#1">гиперссылки</a></li>
+    <li><a href="#2">якоря</a></li>
+    <li><a href="#3">URL</a></li>
+    <li><a href="#4">Графические ссылки </a></li>
+    <li><a href="#4">Принципы удобной навигации</a></li>
+    <li><a href="#4">Новые семант элементы html 5</a></li>
+</ul>
+
+<p id="1">Ссылки</p>
+
+&#60;a href="http://google.com" target="_blank"&#62;ПС Гугл&#60;/a&#62;
+<br>&nbsp rel="nofolow"
+<br>&nbsp rel="download" ссылка предназначена для скачивания (например для картинок) картинку просто так не
+скачать и только правой кнопкой, вот для тогго чтобы качалось сразу - ставится этот атрибут
+
+<br>&nbsptype="MIME-type" Можем стилизовать для таких типов файлов стиль и добавить к нему иконку (например
+тип загружаемого файла) MIME Multipurpose Internet Mail Extensions
+
+&#60;a href="http://google.com" target="_blank" title="Гоогле"&#62;ПС Гугл&#60;/a&#62;
+
+<p id="2">2 ЯКОРЯ</p>
+<br>&#60;p id="abzac1"&#62;Абзац 1&#60;/p&#62;
+&#60;a href="#abzac1"&#62;перейти к абзацу 1&#60;/a&#62; эта формула для ссылки на эту же страницу
+но бывает необходимость сослаться на какой то файл в этой же папке (например на карту проезда)
+&#60;a href="contacts.html#map"&#62;Это ссылка на эту карту в другом html файле&#60;/a&#62;
+
+<p>Примеры исполнения якоря</p>
+<ul>
+    <li><a href="#block1" title="первый раздел">Раздел 1</a></li>
+    <li><a href="#block2" title="второй раздел">Раздел 2</a></li>
+    <li><a href="#block3" title="третий раздел">Раздел 3</a></li>
+    <li><a href="#block4" title="четвертый раздел">Раздел 4</a></li>
+</ul>
+
+
+
+
+
+<p id="block1">
+    1&nbsp Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p id="block2">
+    2&nbsp Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p id="block3">
+    3&nbsp Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p id="block4">
+    4&nbsp Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<p id="3">3 URL</p>
+
+
+
+&#60;схема&#62;://&#60;логин&#62;:&#60;пароль&#62;@&#60;хост&#62;:&#60;хост&#62;:&#60;порт&#62;/&#60;путь&#62;?&#60;параметр&#62;#&#60;якорь&#62;
+&nbsp &nbsphttp
+&nbsp &nbspftp
+&nbsp &nbspfile
+&nbsp &nbspchrome
+&nbsp &nbspmailto
+&nbsp &nbspskype
+
+
+
+<br>схема - - это якорь для открытия в соов приложении http - браузер file - открыть файл skype - открывает
+программу скайп и т.д.
+
+<br>логин и пароль - это соответственно логин и пароль, если их нет то они опускаются
+
+<br>хост - устройство подключенное к сети не важно какое (телефон, компьютер и тд) он описывается его IP адресом
+<br>ipv4 127.0.0.1
+<br>или
+<br>ipv6 338d:0242:0000:0000:0000:0000:1156:200F:35ce
+<br>четыре нуля подряд меняются на просто два двоеточия ::
+
+<br>вместо доменного имени может быть хост! то есть просто его ip
+<br>но как правило - всегда доменное имя
+<br>доменное имя через DNS приравнивается к определенному ip
+
+<br>* корневой домен
+<br>.com .org. net - бомены второго уровня
+<br>потом если стоит точка после второго уровня идет домен третьего уровня .ua .ru и тд
+<br>есть и четвертого уровня .kiev .kaharkov и тд
+
+
+<p>порт - это порт
+
+<p>путь - это путь к папке (файлу) от корня сервера слешь - / это корень папки
+
+    <br>параметры - это все что находится после знака вопроса каждый параметр состоит из пары - ключ и значение
+    <br>значения параметров как правило закодированы в unicode все эти занки процента + цифры - это закодированные в
+    <br>юникод кирилические символы
+    <br>ВАЖНО!
+    <br>внутри ссылки не может быть записана ссылка в кирилице - только в unicode варианте.
+
+    <br># якорь - это якорь
+
+    <br>Все это описание полного URL пути ))
+
+
+
+<p id="4">4 Графические ссылки</p>
+
+
+<p>Пример графической ссылки:</p>
+<br>выглядит так
+<br>&#60;a href="http://112.ua/"&#62;&#60;mg src="http://112.ua/img/icons/logo.png" alt="logo"&#62;
+
+<br><br><br>&nbsp; <a href="http://112.ua/" title="ссылка на сайт 112.ua"><img src="http://112.ua/img/icons/logo.png" alt="logo"></img></a>
+
+<br> Для того чтобы убрать рамки вокруг картинки (для ИЕ) есть стиль style="border:none;"
+
+
+
+
+
+
+<p><a href="#" title="вверх страницы">вверх страницы</a></p>
+
+
+</body>
+</html>
